@@ -7,5 +7,19 @@ query MyTestQuery {
     ... on PullRequest {
       id title author { login }
     }
+    ... on Issue {
+      ... Issue
+    }
+    ... on Organization {
+      ... Organization
+    }
   }
+}
+
+fragment Issue on Issue {
+  id title author { login }
+}
+
+fragment Organization on Organization {
+  orgName:name
 }
