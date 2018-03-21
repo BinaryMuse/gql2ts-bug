@@ -1,0 +1,11 @@
+query MyTestQuery {
+  resource(url: "https://github.com/atom/atom") {
+    __typename
+    ... on Repository {
+      id name owner { login }
+    }
+    ... on PullRequest {
+      id title author { login }
+    }
+  }
+}
