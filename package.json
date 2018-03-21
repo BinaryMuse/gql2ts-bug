@@ -1,0 +1,17 @@
+{
+  "name": "gql2ts-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "gql2ts gql/schema.gql gql/query.gql -o out/gql.d.ts"
+  },
+  "keywords": [],
+  "author": "Michelle Tilley <michelle@michelletilley.net>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "gql2ts": "^1.7.1",
+    "prettier": "^1.11.1"
+  }
+}
